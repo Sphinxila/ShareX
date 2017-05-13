@@ -26,15 +26,39 @@
 using Newtonsoft.Json;
 using Security.Cryptography;
 using ShareX.HelpersLib;
+using ShareX.UploadersLib.Properties;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace ShareX.UploadersLib.FileUploaders
 {
+
+
+    public class Up1FileUploaderService : FileUploaderService
+    {
+        public override FileDestination EnumValue { get; } = FileDestination.Up1;
+
+        public override Icon ServiceIcon => Resources.Up1;
+
+        public override bool CheckConfig(UploadersConfig config)
+        {
+            return config.Up1Host != null && !string.IsNullOrEmpty(config.Up1Key);
+        }
+
+        public override GenericUploader CreateUploader(UploadersConfig config, TaskReferenceHelper taskInfo)
+        {
+            return new Up1(config.Up1Host, config.Up1Key);
+        }
+
+        public override TabPage GetUploadersConfigTabPage(UploadersConfigForm form) => form.tpUp1;
+    }
+
     /*
      * Up1 is an encrypted image uploader. The idea is that any URL (for example, https://up1.ca/#hsd2mdSuIkzTUR6saZpn1Q) contains
      * what is called a "seed". In this case, the seed is "hsd2mdSuIkzTUR6saZpn1Q". With this, we use sha512(seed) (output 64 bytes)
