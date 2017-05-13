@@ -278,7 +278,7 @@ namespace ShareX
             SettingManager.LoadInitialSettings();
 
             Uploader.UpdateServicePointManager();
-            UpdateManager = new GitHubUpdateManager("ShareX", "ShareX", Beta, Portable);
+            UpdateManager = new GitHubUpdateManager("Sphinxila", "ShareX", Beta, Portable);
 
             LanguageHelper.ChangeLanguage(Settings.Language);
 
