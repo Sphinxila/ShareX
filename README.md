@@ -1,4 +1,4 @@
-# ShareX
+# ShareX v11.7.0 with Up1 Uploader
 
 [![Build status](https://img.shields.io/appveyor/ci/ShareX/sharex.svg?label=Build&maxAge=60)](https://ci.appveyor.com/project/ShareX/sharex)
 [![License](https://img.shields.io/github/license/ShareX/ShareX.svg?label=License&maxAge=86400)](./LICENSE.txt)
