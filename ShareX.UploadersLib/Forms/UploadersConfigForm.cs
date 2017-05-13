@@ -549,7 +549,7 @@ namespace ShareX.UploadersLib
             // Up1
 
             txtUp1Host.Text = Config.Up1Host;
-            txtUp1Key.Text = Config.Up1Key
+            txtUp1Key.Text = Config.Up1Key;
 
             // Lambda
 

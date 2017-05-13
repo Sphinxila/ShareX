@@ -193,7 +193,7 @@ namespace ShareX.UploadersLib.FileUploaders
                 uploadArgs["api_key"] = ApiKey;
 
                 // Upload and stream encrypt
-                result = UploadData(encryptedStream, URLHelpers.CombineURL(SystemUrl, "up"), "blob", "file", uploadArgs);
+                result = SendRequestFile(URLHelpers.CombineURL(SystemUrl, "up"), encryptedStream, "blob", "file", uploadArgs);
             }
 
             if (result.IsSuccess)
