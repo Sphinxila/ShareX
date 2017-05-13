@@ -398,6 +398,14 @@
             this.lblPomfUploadURL = new System.Windows.Forms.Label();
             this.lblPomfUploaders = new System.Windows.Forms.Label();
             this.cbPomfUploaders = new System.Windows.Forms.ComboBox();
+
+            // UP1
+            this.tpUp1 = new System.Windows.Forms.TabPage();
+            this.txtUp1Key = new System.Windows.Forms.TextBox();
+            this.txtUp1Host = new System.Windows.Forms.TextBox();
+            this.lblUp1Key = new System.Windows.Forms.Label();
+            this.lblUp1Host = new System.Windows.Forms.Label();
+
             this.tpSeafile = new System.Windows.Forms.TabPage();
             this.cbSeafileAPIURL = new System.Windows.Forms.ComboBox();
             this.grpSeafileShareSettings = new System.Windows.Forms.GroupBox();
@@ -701,6 +709,10 @@
             this.gbJiraServer.SuspendLayout();
             this.tpLambda.SuspendLayout();
             this.tpPomf.SuspendLayout();
+
+            // UP1
+            this.tpUp1.SuspendLayout();
+
             this.tpSeafile.SuspendLayout();
             this.grpSeafileShareSettings.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSeafileExpireDays)).BeginInit();
@@ -1787,6 +1799,8 @@
             this.tcFileUploaders.Controls.Add(this.tpJira);
             this.tcFileUploaders.Controls.Add(this.tpLambda);
             this.tcFileUploaders.Controls.Add(this.tpPomf);
+            // UP1
+            this.tcFileUploaders.Controls.Add(this.tpUp1);
             this.tcFileUploaders.Controls.Add(this.tpSeafile);
             this.tcFileUploaders.Controls.Add(this.tpStreamable);
             this.tcFileUploaders.Controls.Add(this.tpSul);
@@ -3446,6 +3460,40 @@
             resources.ApplyResources(this.cbPomfUploaders, "cbPomfUploaders");
             this.cbPomfUploaders.Name = "cbPomfUploaders";
             this.cbPomfUploaders.SelectedIndexChanged += new System.EventHandler(this.cbPomfUploaders_SelectedIndexChanged);
+
+            // 
+            // tpUp1
+            // 
+            this.tpUp1.Controls.Add(this.txtUp1Key);
+            this.tpUp1.Controls.Add(this.txtUp1Host);
+            this.tpUp1.Controls.Add(this.lblUp1Key);
+            this.tpUp1.Controls.Add(this.lblUp1Host);
+            resources.ApplyResources(this.tpUp1, "tpUp1");
+            this.tpUp1.Name = "tpUp1";
+            this.tpUp1.UseVisualStyleBackColor = true;
+            // 
+            // txtUp1Key
+            // 
+            resources.ApplyResources(this.txtUp1Key, "txtUp1Key");
+            this.txtUp1Key.Name = "txtUp1Key";
+            this.txtUp1Key.TextChanged += new System.EventHandler(this.txtUp1Key_TextChanged);
+            // 
+            // txtUp1Host
+            // 
+            resources.ApplyResources(this.txtUp1Host, "txtUp1Host");
+            this.txtUp1Host.Name = "txtUp1Host";
+            this.txtUp1Host.TextChanged += new System.EventHandler(this.txtUp1Host_TextChanged);
+            // 
+            // lblUp1Key
+            // 
+            resources.ApplyResources(this.lblUp1Key, "lblUp1Key");
+            this.lblUp1Key.Name = "lblUp1Key";
+            // 
+            // lblUp1Host
+            // 
+            resources.ApplyResources(this.lblUp1Host, "lblUp1Host");
+            this.lblUp1Host.Name = "lblUp1Host";
+
             // 
             // tpSeafile
             // 
@@ -5370,6 +5418,11 @@
             this.tpPomf.PerformLayout();
             this.tpSeafile.ResumeLayout(false);
             this.tpSeafile.PerformLayout();
+
+            // UP1
+            this.tpUp1.ResumeLayout(false);
+            this.tpUp1.PerformLayout();
+
             this.grpSeafileShareSettings.ResumeLayout(false);
             this.grpSeafileShareSettings.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSeafileExpireDays)).EndInit();
@@ -5784,6 +5837,13 @@
         private System.Windows.Forms.Label lblTwitterDefaultMessage;
         private System.Windows.Forms.TextBox txtTwitterDefaultMessage;
         private System.Windows.Forms.CheckBox cbTwitterSkipMessageBox;
+
+        // UP1
+        private System.Windows.Forms.TextBox txtUp1Key;
+        private System.Windows.Forms.TextBox txtUp1Host;
+        private System.Windows.Forms.Label lblUp1Key;
+        private System.Windows.Forms.Label lblUp1Host;
+
         private System.Windows.Forms.TextBox txtCoinURLUUID;
         private System.Windows.Forms.Label lblCoinURLUUID;
         private System.Windows.Forms.CheckBox cbOwnCloud81Compatibility;
@@ -5925,6 +5985,7 @@
         internal System.Windows.Forms.TabPage tpLambda;
         internal System.Windows.Forms.TabPage tpLithiio;
         internal System.Windows.Forms.TabPage tpPomf;
+        internal System.Windows.Forms.TabPage tpUp1;
         internal System.Windows.Forms.TabPage tpSeafile;
         internal System.Windows.Forms.TabPage tpSul;
         internal System.Windows.Forms.TabPage tpStreamable;

@@ -112,6 +112,9 @@ System.Net.FtpClient: https://netftp.codeplex.com
 Steamworks.NET: https://github.com/rlabrecque/Steamworks.NET
 OCR Space: http://ocr.space
 
+Up1 BEST!
+Up1 support: https://github.com/Upload
+
 Copyright (c) 2007-2017 ShareX Team";
         }
 
